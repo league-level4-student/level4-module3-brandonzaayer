@@ -9,8 +9,16 @@ public class ExceptionMethods {
 		return c;
 	}
 	public String reverseString(String s) throws IllegalStateException{
-		
-		
-		return null;
+		String backwards = "";
+		if(s.length()==0) {
+			throw new IllegalStateException();
+		}
+		else {
+			for(int i = s.length(); i <= 0; i--){
+			backwards = backwards + s.indexOf(i);
+			}
+		}
+		System.out.println(s + "/n" + backwards);
+		return backwards;
 	}
 }
