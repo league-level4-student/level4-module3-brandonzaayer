@@ -14,11 +14,11 @@ public class ExceptionMethods {
 			throw new IllegalStateException();
 		}
 		else {
-			for(int i = s.length(); i <= 0; i--){
-			backwards = backwards + s.indexOf(i);
+			for(int i = s.length()-1; i >= 0; i--){
+			backwards = backwards + s.charAt(i);
 			}
 		}
-		System.out.println(s + "/n" + backwards);
+		System.out.println(s + "\n" + backwards);
 		return backwards;
 	}
 }
